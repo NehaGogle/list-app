@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h3>List App</h3>
+      <div class="app_form">
+      <div class="did-floating-label-content">
+        <input
+          class="did-floating-input"
+          type="text"
+          id="name"
+          placeholder=""
+        />
+        <label class="did-floating-label">Name</label>
+      </div>
+      <div class="did-floating-label-content">
+        <input
+          class="did-floating-input"
+          type="number"
+          id="mobile"
+          placeholder=""
+        />
+        <input type="hidden" id="index">
+        <label class="did-floating-label">Mobile number</label>
+      </div>
+    </div>
+      <div class="button_add">
+        <button type="button" id="add_btn" onclick="autoFocus();">Add</button>
+        <button type="button" id="edit_btn"  class="d-none" onclick="updateContact();">Edit</button>
+      </div>
+      <br>
+      <hr>
+      <br>
+    
+      <table class="table">
+        <thead id="thead">
+          <th width="35%">Name</th>
+          <th width="25%">Mobile</th>
+          <th width="10%">Edit</th>
+          <th width="10%">Del.</th>
+        </thead> 
+        <tbody id="tableScroll">
+        </tbody>
+       </table>
+      </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+  </body>
+</html>
